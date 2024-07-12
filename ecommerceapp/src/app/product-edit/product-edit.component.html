@@ -1,0 +1,20 @@
+<p>product-edit works!</p>
+<div class="mt-3">
+    <h2>{{ productId === 0 ? 'Add New Product' : 'Edit Product' }}</h2>
+    <form (ngSubmit)="saveProduct()">
+      <div class="form-group">
+        <label>Name:</label>
+        <input [(ngModel)]="product.name" name="name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Description:</label>
+        <input [(ngModel)]="product.description" name="description" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Price:</label>
+        <input [(ngModel)]="product.price" name="price" type="number" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+  </div>
+  
