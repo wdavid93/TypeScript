@@ -11,6 +11,7 @@ import PageNotFound from './pages/page-not-found';
 import Login from './pages/login';
 import PrivateRoute from './PrivateRoute';
 
+
 // Définition du composant principal App en tant que FunctionComponent
 const App: FunctionComponent = () => {
   return (
